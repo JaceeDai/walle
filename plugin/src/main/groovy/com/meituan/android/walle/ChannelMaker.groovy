@@ -28,6 +28,13 @@ class ChannelMaker extends DefaultTask {
 
     private static final String DOT_APK = ".apk";
 
+    BaseVariant getVariant() {
+        return variant
+    }
+
+    Project getTargetProject() {
+        return targetProject
+    }
     @Input
     public BaseVariant variant;
     @Input
